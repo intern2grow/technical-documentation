@@ -1,7 +1,9 @@
 # technical-documentation
 
-hello there, your task is to add an icon on each code sample, so user can copy the code to clipboard by clicking on this icon.
+Problem:
 
-fork the repository and start working on it.
+Adding copy to clipboard icon to code samples
 
-best of luck.
+Solution:
+
+To add a copy to clipboard icon to each code sample, I will need to use a combination of HTML, CSS, and JavaScript.
