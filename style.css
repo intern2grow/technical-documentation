@@ -44,3 +44,19 @@ pre{
 }
 
 
+pre {
+    position: relative;
+  }
+  
+  .copy-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
