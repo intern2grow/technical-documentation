@@ -3,44 +3,179 @@
 ::-webkit-scrollbar-track:hover {background: #D1D1DD;}
 ::-webkit-scrollbar-thumb {background: #666;}
 ::-webkit-scrollbar-thumb:hover {background: #444;}
-*{padding: 0;margin: 0;font-family: Bree Serif, sans-serif;}
-#navbar{
-    position: fixed;top: 0px;left: 0px;z-index: 2;
-    width: 150px;height: 100%;background-color: #c7c7c7;
-}
-header{margin: 25px 0px 5px 0px;font-size: 24px;font-weight: bold;}
-header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;padding: 2px;}
-#navbar header{text-align: center;}
-#navbar a{
-    display: block;width: calc(100% - 8px);
-    text-decoration: none;text-align: center;
-    padding: 5px 0px;margin: 4px;
-    background-color: #e2e2e2;color: #121212;
-    font-size: 18px;transition-duration: 0.3s;
-}
-#navbar a:hover{background-color: #121212;color: #e2e2e2;}
-#main-doc{
-    position: relative;left: 175px;
-    width: calc(100% - 175px);padding: 10px 0px 50px 0px;
-}
-p{font-size: 16px;padding: 6px 0px 2px 0px;}
-ul, ol{padding: 10px 30px;background-color: #e2e2e2;width: fit-content;}
-pre{
-    padding: 6px 10px;width: fit-content;
-    background-color: #121212;color: #e2e2e2;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bree Serif', sans-serif;
 }
 
+#navbar{
+    position: fixed;top: 0px;left: 0px;
+    z-index: 2;
+    width: 150px;
+    height: 100%;
+    background-color: #c7c7c7;
+}
+
+header{
+    margin: 25px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header:not(#navbar header){
+    border-bottom: 2px solid #121212;
+    -o-width: fit-content;
+    -moz-width: fit-content;
+    -webkit-width: fit-content;
+    width: fit-content;
+    padding: 2px;
+}
+
+#navbar header{
+    text-align: center;
+}
+
+#navbar a{
+    display: block;
+    width: calc(100% - 8px);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 4px;
+    background-color: #e2e2e2;
+    color: #121212;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+
+#navbar a:hover{
+    background-color: #121212;
+    color: #e2e2e2;
+}
+
+#main-doc{
+    position: relative;
+    left: 175px;
+    width: calc(100% - 175px);
+    padding: 10px 0px 50px 0px;
+}
+
+p{
+    font-size: 16px;
+    padding: 6px 0px 2px 0px;
+}
+
+ul, ol{
+    padding: 10px 30px;
+    background-color: #e2e2e2;
+    -o-width: fit-content;
+    -moz-width: fit-content;
+    -webkit-width: fit-content;
+    width: fit-content;
+}
+
+pre{
+    padding: 6px 10px;
+    -o-width: fit-content;
+    -moz-width: fit-content;
+    -webkit-width: fit-content;
+    width: fit-content;
+    background-color: #121212;
+    color: #e2e2e2;
+}
+
+#pre_one,#pre_two,#pre_three,
+#pre_four,#pre_five,#pre_six,
+#pre_seven,#pre_eight{position: relative;}
+
+#btn-copy-one,#btn-copy-two,
+#btn-copy-three,#btn-copy-four,
+#btn-copy-five,#btn-copy-six,
+#btn-copy-seven,#btn-copy-eight{
+    padding: 2px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1.5px solid #121212;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* one */
+#btn-copy-one{
+    position: absolute;
+    top: 0px;
+    left: 490px;
+}
+/* two */
+#btn-copy-two{
+    position: absolute;
+    top: 2px;
+    left: 310px;
+}
+/* three */
+#btn-copy-three{
+    position: absolute;
+    top: 0px;
+    left: 240px;
+}
+/* four */
+#btn-copy-four{
+    position: absolute;
+    top: 2px;
+    left: 140px;
+}
+/* five */
+#btn-copy-five{
+    position: absolute;
+    top: 0px;
+    left: 242px;
+}
+/* six */
+#btn-copy-six{
+    position: absolute;
+    top: 2px;
+    left: 165px;
+}
+/* seven */
+#btn-copy-seven{
+    position: absolute;
+    top: 0px;
+    left: 375px;
+}
+/* eight */
+#btn-copy-eight{
+    position: absolute;
+    top: 0px;
+    left: 265px;
+}
+
+/* media query */
 @media screen and (max-width: 800px) {
     #navbar {
-        position: relative;top: 0px;left: 0px;
-        width: 100%;height: auto;padding-bottom: 2px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 2px;
     }
-    #navbar header{margin: 0px;padding: 20px 0px 10px 0px;}
+
+    #navbar header{
+        margin: 0px;
+        padding: 20px 0px 10px 0px;
+    }
+
     #main-doc{
-        position: relative;left: 15px;
-        padding: 10px 0px 50px 0px;width: calc(100% - 50px);
+        position: relative;
+        left: 15px;
+        padding: 10px 0px 50px 0px;
+        width: calc(100% - 50px);
     }
-    pre{max-width: 100%;overflow-x: auto;}
+
+    pre{
+        max-width: 100%;
+        overflow-x: auto;
+    }
 }
-
-
