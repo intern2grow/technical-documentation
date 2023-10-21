@@ -42,5 +42,54 @@ pre{
     }
     pre{max-width: 100%;overflow-x: auto;}
 }
+.main-section{
+    position: relative;
+}
+.icon{
+    position: relative;
+    top:30px;
 
 
+
+}
+.icon i{
+    position: relative;
+    color: #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    left: 210px;
+}
+.icon1 i{
+    margin-left: 240px;
+}
+.icon3 i{
+    margin-left: 120px;
+}
+.icon4 i{
+    margin-left: 10px;
+}
+.coppied0{
+    position: relative;
+    color: red;
+    margin-left: 410px;
+}
+.coppied1{
+    position: relative;
+    color: red;
+    margin-left: 180px;
+}
+.coppied2{
+    position: relative;
+    color: red;
+    margin-left: 180px;
+}
+.coppied3{
+    position: relative;
+    color: red;
+    margin-left: 300px;
+}
+.coppied4{
+    position: relative;
+    color: red;
+    margin-left: 200px;
+}
